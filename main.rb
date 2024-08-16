@@ -25,7 +25,7 @@ class RubyCLI < Thor
           file_name = File.basename(image_path)
           write_data(file_name, lat, long)
         end
-      rescue => e
+      rescue
         # puts e.message
       end
 

@@ -37,7 +37,7 @@ class RubyCLI < Thor
   private
   
   def write_data(file_name, lat, long)
-    puts "GPS data from #{file_name}: #{lat} #{long}" if options[:verbose]
+    puts "Processing GPS data from #{file_name}: #{lat} #{long}" if options[:verbose]
 
     # Open the CSV file in append mode ('a')
     CSV.open(CSV_FILE_PATH, 'a') do |csv|
